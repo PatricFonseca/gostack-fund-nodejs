@@ -38,12 +38,8 @@ transactionRouter.post('/', (request, response) => {
     switch (type) {
       case 'outcome':
         if (total < value) {
-          console.log('cai aqui');
           throw new Error('Not income enough');
         }
-        break;
-      case 'income':
-        console.log('okkk');
         break;
     }
 
